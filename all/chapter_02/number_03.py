@@ -16,3 +16,10 @@ end = (image.shape[1], image.shape[0])
 color = (255, 0, 0)
 # setting the thickness
 thickness = 4
+
+# Drawing a line
+cv2.line(image, start, end, color, thickness)
+
+# displaying the modified image
+cv2.imshow("Modified image", image)
+cv2.waitKey(0)
