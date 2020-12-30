@@ -10,3 +10,4 @@ Computer Vision Practices
         * [Number_02](/all/chapter_02/number_02.py): Accessing and manipulating pixels
         * [Number_03](/all/chapter_02/number_03.py): Drawing a line on an image
         * [Number_04](/all/chapter_02/number_04.py): Drawing a rectangle on an image
+        * [Number_05](/all/chapter_02/number_05.py): Drawing a rectangle on an new canvas
