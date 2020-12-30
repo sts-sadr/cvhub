@@ -11,4 +11,12 @@ canvas = np.zeros((500, 500, 3), dtype="uint8")
 center = (250, 250)
 radius = 100
 color = (0, 0, 255)
-thickness = 1
+thickness = 10
+
+# drawing circle
+cv2.circle(canvas, center, radius, color, thickness)
+# saving modified image
+cv2.imwrite("circle_photo.jpg", canvas)
+# displaying modified photo
+cv2.imshow("Circle", canvas)
+cv2.waitKey(0)
