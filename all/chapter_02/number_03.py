@@ -11,3 +11,8 @@ image = cv2.imread(image_path)
 # setting start and end coordinates
 start = (0, 0)
 end = (image.shape[1], image.shape[0])
+
+# setting the color in BGR
+color = (255, 0, 0)
+# setting the thickness
+thickness = 4
