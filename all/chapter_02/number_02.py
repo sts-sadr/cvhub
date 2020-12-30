@@ -11,3 +11,8 @@ image = cv2.imread(image_path)
 # Accessing pixel at (0, 0) location
 (b, g, r) = image[0, 0]
 print(f"Blue, green and red values at (0, 0); {(b, g, r)}")
+
+# Manipulating pixels and showing modified image
+image[0: 100, 0: 100] = (255, 255, 0)
+cv2.imshow("Modified image", image)
+cv2.waitKey(0)
