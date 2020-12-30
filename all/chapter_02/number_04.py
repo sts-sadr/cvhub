@@ -16,3 +16,11 @@ end = (300, 300)
 # setting the color and thickness of the outline
 color = (0, 255, 0)
 thickness = 2
+
+# drawing the rectangle
+cv2.rectangle(image, start, end, color, thickness)
+# saving the modified image
+cv2.imwrite("rec_photo.jpg", image)
+# displaying the modified image
+cv2.imshow("Rectangle", image)
+cv2.waitKey(0)
