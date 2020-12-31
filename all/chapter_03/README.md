@@ -1,4 +1,4 @@
-### Chapter 02
+### Chapter 03
 #### Techniques of image processing
 
 ##### Table of contents:
