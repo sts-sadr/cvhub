@@ -12,3 +12,12 @@ image = cv2.imread(image_path)
 # as a tuple and then calculating the aspect ratio
 (h, w) = image.shape[:2]
 aspect_ratio = w / h
+
+# resizing the image to decrease height by half of the original image
+# Note: pixel values must be integers.
+height = int(0.5 * h)
+width = int(height * aspect_ratio)
+# new image dimension as a tuple
+dimension = (height, width)
+resized_image = cv2.resize(image, dimension, interpolation=cv2.INTER_AREA)
+cv2.imshow("Resized Image", resized_image)
