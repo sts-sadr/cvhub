@@ -21,3 +21,9 @@ width = int(height * aspect_ratio)
 dimension = (height, width)
 resized_image = cv2.resize(image, dimension, interpolation=cv2.INTER_AREA)
 cv2.imshow("Resized Image", resized_image)
+
+# resizing using x and y factors
+resized_with_factors = cv2.resize(image, None, fx=1.2, fy=1.2,
+                                  interpolation=cv2.INTER_LANCZOS4)
+cv2.imshow("Resized with factors", resized_with_factors)
+cv2.waitKey(0)
