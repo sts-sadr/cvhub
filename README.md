@@ -17,3 +17,4 @@ Computer Vision Practices
             * [02](/all/chapter_02/exercises/02.py): Drawing two concentric circles with the outermost circle having a radius of 1.5 times the radius of the inner circle
     * [chapter_03](/all/chapter_03):
         * [Number_01](/all/chapter_03/number_01.py): Calculating the aspect ratio and resizing the image
+        * [Number_02](/all/chapter_03/number_02.py): Image translation along the x- and y-axes
