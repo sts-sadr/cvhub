@@ -14,3 +14,9 @@ translation_matrix = np.float32([
     [1, 0, 50],
     [0, 1, 20]
 ])
+
+# Moving the image
+moved_image = cv2.warpAffine(image, translation_matrix,
+                             (image.shape[1], image.shape[0]))
+cv2.imshow("Moved image", moved_image)
+cv2.waitKey(0)
