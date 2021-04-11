@@ -14,6 +14,7 @@ print(f"Image height: {image.shape[0]}")
 print(f"Image width: {image.shape[1]}")
 print(f"Image channels: {image.shape[2]}")
 print(f"Size of the image array: {image.size}")
+print(f"data type of pixels: {image.dtype}")
 
 # Display the image and wait until a key is pressed
 cv2.imshow("My_Image", image)
