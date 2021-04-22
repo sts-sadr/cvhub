@@ -11,8 +11,8 @@ image = cv2.imread(image_path)
 
 # Defining translation matrix
 translation_matrix = np.float32([
-    [1, 0, 250],
-    [0, 1, 120]
+    [1, 0, 250],  # the movement along the x axis by 250 pixels to the right
+    [0, 1, 120]   # the movement along the y axis by 120 pixels down
 ])
 
 # Moving the image
