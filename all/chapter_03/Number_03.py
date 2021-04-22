@@ -12,3 +12,9 @@ center = (h // 2, w // 2)
 angle = -45
 scale = 1.0
 rotation_matrix = cv2.getRotationMatrix2D(center, angle, scale)
+
+# Rotating the image
+rotated_image = cv2.warpAffine(image, rotation_matrix, (image.shape[1], image.shape[0]))
+
+cv2.imshow("Rotated Image", rotated_image)
+cv2.waitKey(0)
