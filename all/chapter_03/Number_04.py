@@ -6,3 +6,8 @@ import cv2
 # Loading the image
 image_path = "images/918_spyder.jpg"
 image = cv2.imread(image_path)
+
+# Flip horizontally
+flip_horizontally = cv2.flip(image, 1)
+cv2.imshow("Flipped Horizontally", flip_horizontally)
+cv2.waitKey(-1)
