@@ -21,4 +21,5 @@ Computer Vision Practices
         * [Number_03](/all/chapter_03/Number_03.py)--> Image rotation around the center of the image
         * [Number_04](all/chapter_03/Number_04.py)--> Image flipping horizontally, Vertically and then horizontally plus vertically
         * [Number_05](all/chapter_03/Number_05.py)--> Image cropping
+        * [Number_06](all/chapter_03/Number_06.py)--> Addition of two images
     
