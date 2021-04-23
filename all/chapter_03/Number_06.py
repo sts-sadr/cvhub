@@ -21,8 +21,8 @@ resized_images_2 = cv2.resize(image_2, (800, 800), interpolation=cv2.INTER_AREA)
 simple_addition_result = cv2.add(resized_images_1, resized_images_2)
 
 # Weighted addition process
-weighted_addition_process = cv2.addWeighted(resized_images_1, 0.7,
-                                            resized_images_2, 0.3, 0)
+weighted_addition_result = cv2.addWeighted(resized_images_1, 0.7,
+                                           resized_images_2, 0.3, 0)
 
 # Enhancement process
 enhanced_image = 255 * resized_images_1
@@ -32,4 +32,6 @@ enhanced_image = 255 * resized_images_1
 cv2.imshow("Resized image 1", resized_images_1)
 cv2.imshow("Resized image 2", resized_images_2)
 cv2.imshow("Simple addition result", simple_addition_result)
+cv2.imshow("Weighted addition result", weighted_addition_result)
+cv2.imshow("Enhanced image", enhanced_image)
 cv2.waitKey(0)
