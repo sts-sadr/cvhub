@@ -40,3 +40,7 @@ cv2.imshow("Bitwise AND", bitwise_and)
 # Bitwise OR
 bitwise_or = cv2.bitwise_or(circle, square)
 cv2.imshow("Bitwise OR", bitwise_or)
+
+# Bitwise NOT
+bitwise_not = cv2.bitwise_not(circle)
+cv2.imshow("Bitwise NOT", bitwise_not)
