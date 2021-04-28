@@ -44,3 +44,8 @@ cv2.imshow("Bitwise OR", bitwise_or)
 # Bitwise NOT
 bitwise_not = cv2.bitwise_not(circle)
 cv2.imshow("Bitwise NOT", bitwise_not)
+
+# Bitwise XOR
+bitwise_xor = cv2.bitwise_xor(circle, square)
+cv2.imshow("Bitwise XOR", bitwise_xor)
+cv2.waitKey(0)
