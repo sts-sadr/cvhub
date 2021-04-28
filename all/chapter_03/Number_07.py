@@ -36,3 +36,7 @@ cv2.imshow("A white square", square)
 # Bitwise AND
 bitwise_and = cv2.bitwise_and(circle, square)
 cv2.imshow("Bitwise AND", bitwise_and)
+
+# Bitwise OR
+bitwise_or = cv2.bitwise_or(circle, square)
+cv2.imshow("Bitwise OR", bitwise_or)
