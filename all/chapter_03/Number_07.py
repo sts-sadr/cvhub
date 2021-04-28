@@ -31,3 +31,8 @@ cv2.imshow("A white circle", circle)
 square = cv2.rectangle(np.zeros((500, 500, 3), dtype="uint8"), (250, 250), (100, 100),
                        (255, 255, 255), -1)
 cv2.imshow("A white square", square)
+
+
+# Bitwise AND
+bitwise_and = cv2.bitwise_and(circle, square)
+cv2.imshow("Bitwise AND", bitwise_and)
