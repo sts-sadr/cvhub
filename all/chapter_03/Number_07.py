@@ -21,3 +21,8 @@
 
 import cv2
 import numpy as np
+
+
+# Creating a circle
+circle = cv2.circle(np.zeros((500, 500, 3), dtype="uint8"), (250, 250), 90, (255, 255, 255), -1)
+cv2.imshow("A white circle", circle)
