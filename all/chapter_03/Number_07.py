@@ -18,3 +18,6 @@
         A bitwise XOR of the two operands “a” and “b” results in 1 if either but not both “a” or “b”
         is 1; otherwise, the result is 0.
 """
+
+import cv2
+import numpy as np
