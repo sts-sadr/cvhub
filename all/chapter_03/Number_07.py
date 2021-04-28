@@ -26,3 +26,8 @@ import numpy as np
 # Creating a circle
 circle = cv2.circle(np.zeros((500, 500, 3), dtype="uint8"), (250, 250), 90, (255, 255, 255), -1)
 cv2.imshow("A white circle", circle)
+
+# Creating a square
+square = cv2.rectangle(np.zeros((500, 500, 3), dtype="uint8"), (250, 250), (100, 100),
+                       (255, 255, 255), -1)
+cv2.imshow("A white square", square)
