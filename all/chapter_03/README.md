@@ -10,3 +10,5 @@
     * [Number_05](/all/chapter_03/Number_05.py)--> Image cropping
     * [Number_06](/all/chapter_03/Number_06.py)--> Addition of two images
     * [Number_07](/all/chapter_03/Number_07.py)--> Bitwise operations
+    * [Number_08](/all/chapter_03/Number_08.py)--> Masking
+    * [Number_09](/all/chapter_03/Number_09.py)--> Splitting and merging channels
