@@ -19,3 +19,8 @@ mask_image = cv2.rectangle(np.zeros(sample_image.shape[:2], dtype="uint8"), (50,
                            (int(sample_image.shape[1]) - 50, int(sample_image.shape[0] / 2) - 50),
                            (255, 255, 255), -1)
 cv2.imshow("Mask Image", mask_image)
+
+# Performing mask using bitwise_and operator
+masked = cv2.bitwise_and(sample_image, sample_image, mask=mask_image)
+cv2.imshow("Masked Image", masked)
+cv2.waitKey(0)
