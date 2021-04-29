@@ -14,3 +14,9 @@ cv2.imshow("Abraham Lincoln", sample_image)
 
 # Splitting the image into component colors
 (b, g, r) = cv2.split(sample_image)
+
+# Displaying the components
+cv2.imshow("Blue Image", b)
+cv2.imshow("Green Image", g)
+cv2.imshow("Red Image", r)
+cv2.waitKey(0)
