@@ -18,4 +18,9 @@ cv2.imshow("Abraham Lincoln", sample_image)
 cv2.imshow("Blue Image", b)
 cv2.imshow("Green Image", g)
 cv2.imshow("Red Image", r)
+
+
+# Merging color channels
+merged = cv2.merge([b, g, r])
+cv2.imshow("Merged Image", merged)
 cv2.waitKey(0)
