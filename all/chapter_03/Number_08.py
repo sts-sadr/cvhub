@@ -8,3 +8,8 @@
 
 import cv2
 import numpy as np
+
+
+# Loading sample image
+sample_image = cv2.imread("images/Albert_Einstein.jpg")
+cv2.imshow("Albert Einstein", sample_image)
