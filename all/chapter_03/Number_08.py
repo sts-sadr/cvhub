@@ -5,3 +5,6 @@
         In other words, we put our focus on a portion of the image by applying a mask
         on the remaining portion of the image.
 """
+
+import cv2
+import numpy as np
