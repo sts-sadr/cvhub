@@ -8,6 +8,11 @@
         - Salt and pepper noise
         - Impulse noise
         - Gaussian noise
+
+    Mean filtering or averaging:
+        Taking a small portion of image(called kernel and sliding window) then moving this
+        window from left to right and from top to bottom. The pixel at the center of this
+        kernel(matrix) is replaced by the average of all the pixels surrounding it.
 """
 
 # Smoothing and/or blurring by mean filtering or averaging
