@@ -20,3 +20,8 @@ imshow("Original Image", original_image)
 kernel3by3 = (3, 3)
 kernel5by5 = (5, 5)
 kernel7by7 = (7, 7)
+
+# performing blur process
+blurred_3 = blur(original_image, kernel3by3)
+blurred_5 = blur(original_image, kernel5by5)
+blurred_7 = blur(original_image, kernel7by7)
