@@ -10,6 +10,8 @@
         - Gaussian noise
 """
 
+# Smoothing and/or blurring by mean filtering or averaging
+
 from cv2 import blur, imread, imshow, waitKey
 
 # Loading the image
