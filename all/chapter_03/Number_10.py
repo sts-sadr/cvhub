@@ -15,3 +15,8 @@ from cv2 import blur, imread, imshow, waitKey
 # Loading the image
 original_image = imread("images/918_spyder.jpg")
 imshow("Original Image", original_image)
+
+# Defining the kernels
+kernel3by3 = (3, 3)
+kernel5by5 = (5, 5)
+kernel7by7 = (7, 7)
