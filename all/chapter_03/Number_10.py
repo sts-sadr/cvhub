@@ -11,3 +11,7 @@
 """
 
 from cv2 import blur, imread, imshow, waitKey
+
+# Loading the image
+original_image = imread("images/918_spyder.jpg")
+imshow("Original Image", original_image)
