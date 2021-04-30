@@ -9,3 +9,5 @@
         - Impulse noise
         - Gaussian noise
 """
+
+from cv2 import blur, imread, imshow, waitKey
