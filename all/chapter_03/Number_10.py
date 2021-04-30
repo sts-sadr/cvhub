@@ -25,3 +25,9 @@ kernel7by7 = (7, 7)
 blurred_3 = blur(original_image, kernel3by3)
 blurred_5 = blur(original_image, kernel5by5)
 blurred_7 = blur(original_image, kernel7by7)
+
+# Displaying the results
+imshow("Blurred 3x3", blurred_3)
+imshow("Blurred 5x5", blurred_5)
+imshow("Blurred 7x7", blurred_7)
+waitKey(0)
