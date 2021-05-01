@@ -13,3 +13,8 @@
 """
 
 from cv2 import imread, imshow, waitKey, bilateralFilter
+
+# Bilateral blurring
+# Loading the noisy image
+noisy_image = imread("images/salt_and_pepper_noise.jpg")
+imshow("Noisy Image", noisy_image)
