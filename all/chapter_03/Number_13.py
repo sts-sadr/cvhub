@@ -18,3 +18,8 @@ from cv2 import imread, imshow, waitKey, bilateralFilter
 # Loading the noisy image
 noisy_image = imread("images/salt_and_pepper_noise.jpg")
 imshow("Noisy Image", noisy_image)
+
+# Performing bilateral filter
+# Bilateral blurring with diameter 5
+filtered_image_5 = bilateralFilter(noisy_image, 5, 150, 50)
+imshow("Blurred Image with diameter 5", filtered_image_5)
