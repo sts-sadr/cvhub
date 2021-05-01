@@ -8,3 +8,7 @@
 """
 
 from cv2 import imread, imshow, waitKey, medianBlur
+
+# Loading the noisy image
+noisy_image = imread("images/salt_and_pepper_noise.jpg")
+imshow("Noisy Image", noisy_image)
