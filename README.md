@@ -25,3 +25,7 @@ Computer Vision Practices
         * [Number_07](all/chapter_03/Number_07.py)--> Bitwise operations
         * [Number_08](all/chapter_03/Number_08.py)--> Masking
         * [Number_09](all/chapter_03/Number_09.py)--> Splitting and merging channels
+        * [Number_10](all/chapter_03/Number_10.py)--> Smoothing and/or blurring by mean filtering or averaging
+        * [Number_11](all/chapter_03/Number_11.py)--> Gaussian filtering
+        * [Number_12](all/chapter_03/Number_12.py)--> Median blurring
+        * [Number_13](all/chapter_03/Number_13.py)--> Bilateral blurring
