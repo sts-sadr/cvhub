@@ -8,3 +8,9 @@
 """
 
 from cv2 import imread, imshow, GaussianBlur, waitKey
+
+# Smoothing using the Gaussian technique
+
+# Loading the image
+original_image = imread("images/Albert_Einstein.jpg")
+imshow("Original Image", original_image)
