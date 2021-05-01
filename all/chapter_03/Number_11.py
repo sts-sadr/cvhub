@@ -14,3 +14,8 @@ from cv2 import imread, imshow, GaussianBlur, waitKey
 # Loading the image
 original_image = imread("images/Albert_Einstein.jpg")
 imshow("Original Image", original_image)
+
+# Gaussian blurring using 5x5 kernel and 0 standard deviation to calculate from kernel
+filtered_image = GaussianBlur(original_image, (5, 5), 0)
+imshow("Gaussian Filtered Image", filtered_image)
+waitKey(0)
