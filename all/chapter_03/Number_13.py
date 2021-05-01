@@ -23,3 +23,8 @@ imshow("Noisy Image", noisy_image)
 # Bilateral blurring with diameter 5
 filtered_image_5 = bilateralFilter(noisy_image, 5, 150, 50)
 imshow("Blurred Image with diameter 5", filtered_image_5)
+
+# Bilateral blurring with diameter 7
+filtered_image_7 = bilateralFilter(noisy_image, 7, 160, 60)
+imshow("Blurred Image with diameter 7", filtered_image_7)
+waitKey(0)
