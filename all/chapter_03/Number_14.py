@@ -22,3 +22,7 @@ imshow("Original Image", original_image)
 # Converting to grayscale
 grayscale_image = cvtColor(original_image, COLOR_BGR2GRAY)
 imshow("GrayScale Image", grayscale_image)
+
+# Binarize using thresholding
+(T, binarized_image) = threshold(grayscale_image, 60, 255, THRESH_BINARY)
+imshow("Binarized Image", binarized_image)
