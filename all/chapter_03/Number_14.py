@@ -8,3 +8,7 @@
     have only two values of the pixels—0 and 255—which are black-and-white color values. Thus,
     a grayscale image is converted into a black-and-white image (also called a binary image).
 """
+
+# Simple Thresholding
+
+from cv2 import imread, imshow, waitKey, threshold, THRESH_BINARY, THRESH_BINARY_INV
