@@ -16,3 +16,6 @@
     * [Number_11](/all/chapter_03/Number_11.py)--> Gaussian filtering
     * [Number_12](/all/chapter_03/Number_12.py)--> Median blurring
     * [Number_13](/all/chapter_03/Number_13.py)--> Bilateral blurring
+    * [Number_14](/all/chapter_03/Number_14.py)--> Simple thresholding
+    * [Number_15](/all/chapter_03/Number_15.py)--> Adaptive thresholding
+    * [Number_16](/all/chapter_03/Number_16.py)--> Otsu's Binarization
