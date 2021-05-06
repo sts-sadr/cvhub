@@ -18,3 +18,8 @@ from cv2 import (imread, imshow, waitKey, cvtColor, COLOR_BGR2GRAY, threshold,
 original_image = imread("images/918_spyder.jpg")
 grayscale_image = cvtColor(original_image, COLOR_BGR2GRAY)
 imshow("GrayScale", grayscale_image)
+
+# Binarize the image using thresholding
+(T, binarized_image) = threshold(grayscale_image, 0, 255, THRESH_BINARY+THRESH_OTSU)
+print(f"Threshold value with otsu binarization: {T}")
+imshow("Binarized Image", binarized_image)
