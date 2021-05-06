@@ -21,3 +21,7 @@ imshow("Original Image", original_image)
 # Converting to grayscale
 grayscale_image = cvtColor(original_image, COLOR_BGR2GRAY)
 imshow("GrayScale Image", grayscale_image)
+
+# Binarization using adaptive thresholding and simple mean
+bsm = adaptiveThreshold(original_image, 255, ADAPTIVE_THRESH_MEAN_C, THRESH_BINARY, 7, 3)
+imshow("Binarization using adaptive thresholding and simple mean", bsm)
