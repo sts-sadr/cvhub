@@ -12,3 +12,8 @@
 
 from cv2 import (imread, imshow, waitKey, cvtColor, COLOR_BGR2GRAY, ADAPTIVE_THRESH_GAUSSIAN_C,
                  adaptiveThreshold, ADAPTIVE_THRESH_MEAN_C, THRESH_BINARY, THRESH_BINARY_INV)
+
+
+# Loading the image
+original_image = imread("images/Abraham_Lincoln.jpg")
+imshow("Original Image", original_image)
