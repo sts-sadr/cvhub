@@ -8,3 +8,8 @@
     Otsu’s method determines an optimal global threshold value from the image histogram. For now, just
     think of the histogram as the frequency distribution of pixel values.
 """
+
+# Otsu's Binarization
+
+from cv2 import (imread, imshow, waitKey, cvtColor, COLOR_BGR2GRAY, threshold,
+                 THRESH_BINARY, THRESH_OTSU, THRESH_BINARY_INV)
