@@ -13,3 +13,8 @@
 
 from cv2 import (imread, imshow, waitKey, cvtColor, COLOR_BGR2GRAY, threshold,
                  THRESH_BINARY, THRESH_OTSU, THRESH_BINARY_INV)
+
+# Loading original image and converting it to grayscale
+original_image = imread("images/918_spyder.jpg")
+grayscale_image = cvtColor(original_image, COLOR_BGR2GRAY)
+imshow("GrayScale", grayscale_image)
