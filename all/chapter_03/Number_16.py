@@ -23,3 +23,9 @@ imshow("GrayScale", grayscale_image)
 (T, binarized_image) = threshold(grayscale_image, 0, 255, THRESH_BINARY+THRESH_OTSU)
 print(f"Threshold value with otsu binarization: {T}")
 imshow("Binarized Image", binarized_image)
+
+# Binarization with inverse thresholding
+(Ti, inverse_binarized_image) = threshold(grayscale_image, 0, 255, THRESH_BINARY_INV+THRESH_OTSU)
+print(f"Threshold value with otsu inverse binarization: {Ti}")
+imshow("Inverse Binarized Image", inverse_binarized_image)
+waitKey(0)
