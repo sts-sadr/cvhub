@@ -7,3 +7,8 @@
     threshold for a pixel based on a small region around it. This will get us a different
     threshold value for different regions in the same image.
 """
+
+# Adaptive Thresholding
+
+from cv2 import (imread, imshow, waitKey, cvtColor, COLOR_BGR2GRAY, ADAPTIVE_THRESH_GAUSSIAN_C,
+                 adaptiveThreshold, ADAPTIVE_THRESH_MEAN_C, THRESH_BINARY, THRESH_BINARY_INV)
