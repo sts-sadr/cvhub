@@ -40,3 +40,12 @@ sobel_y = Sobel(blurred_image, CV_64F, 0, 1, ksize=3)
 sobel_y = uint8(absolute(sobel_y))
 imshow("Sobel X", sobel_x)
 imshow("Sobel Y", sobel_y)
+
+# Schar gradient detection by passing ksize = -1 to Sobel function
+schar_x = Sobel(blurred_image, CV_64F, 1, 0, ksize=-1)
+schar_x = uint8(absolute(schar_x))
+schar_y = Sobel(blurred_image, CV_64F, 0, 1, ksize=-1)
+schar_y = uint8(absolute(schar_y))
+imshow("Schar X", schar_x)
+imshow("Schar Y", schar_y)
+waitKey(0)
