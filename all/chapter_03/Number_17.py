@@ -23,3 +23,9 @@
 from cv2 import (imread, imshow, waitKey, cvtColor, COLOR_BGR2GRAY, bilateralFilter,
            Sobel, CV_64F)
 from numpy import (uint8, absolute)
+
+
+# Loading the image and converting to grayscale
+original_image = imread("images/sudoku.png")
+grayscale_image = cvtColor(original_image, COLOR_BGR2GRAY)
+imshow("GrayScale Image", grayscale_image)
