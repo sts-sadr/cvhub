@@ -30,5 +30,13 @@ original_image = imread("images/sudoku.png")
 grayscale_image = cvtColor(original_image, COLOR_BGR2GRAY)
 # Applying bilateral filter
 blurred_image = bilateralFilter(grayscale_image, 5, 50, 50)
-imshow("Result", blurred_image)
-waitKey(0)
+imshow("Blurred Image", blurred_image)
+
+
+# Sobel gradient detection
+sobel_x = Sobel(blurred_image, CV_64F, 1, 0, ksize=3)
+sobel_x = uint8(absolute(sobel_x))
+sobel_y = Sobel(blurred_image, CV_64F, 0, 1, ksize=3)
+sobel_y = uint8(absolute(sobel_y))
+imshow("Sobel X", sobel_x)
+imshow("Sobel Y", sobel_y)
