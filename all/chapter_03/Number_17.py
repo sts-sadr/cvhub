@@ -28,4 +28,7 @@ from numpy import (uint8, absolute)
 # Loading the image and converting to grayscale
 original_image = imread("images/sudoku.png")
 grayscale_image = cvtColor(original_image, COLOR_BGR2GRAY)
-imshow("GrayScale Image", grayscale_image)
+# Applying bilateral filter
+blurred_image = bilateralFilter(grayscale_image, 5, 50, 50)
+imshow("Result", blurred_image)
+waitKey(0)
