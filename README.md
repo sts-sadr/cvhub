@@ -34,3 +34,4 @@ Computer Vision Practices
         * [Number_16](all/chapter_03/Number_16.py)--> Otsu's Binarization
         * [Number_17](all/chapter_03/Number_17.py)--> Sobel Derivative
         * [Number_18](all/chapter_03/Number_18.py)--> Laplacian Derivative
+        * [Number_19](all/chapter_03/Number_19.py)--> Canny edge detection
