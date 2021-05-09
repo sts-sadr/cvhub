@@ -13,3 +13,10 @@
 
 from cv2 import (imread, imshow, waitKey, cvtColor, COLOR_BGR2GRAY, bilateralFilter, Laplacian, CV_64F)
 from numpy import uint8, absolute
+
+
+# Loading, converting to grayscale and blurring
+original_image = imread("images/sudoku.png")
+grayscale_image = cvtColor(original_image, COLOR_BGR2GRAY)
+blurred_image = bilateralFilter(grayscale_image, 5, 50, 50)
+imshow("Blurred Image", blurred_image)
