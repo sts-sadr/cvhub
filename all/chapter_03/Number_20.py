@@ -28,3 +28,7 @@ imshow("Binarized Image", binarized_image)
 # Applying canny function
 canny_applied = Canny(binarized_image, 0, 255)
 imshow("Canny Applied", canny_applied)
+
+# Finding contours
+(contours, hierarchy) = findContours(canny_applied, RETR_EXTERNAL, CHAIN_APPROX_SIMPLE)
+print(f"Number of contours determined are: {len(contours)}")
