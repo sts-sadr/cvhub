@@ -32,3 +32,9 @@ imshow("Canny Applied", canny_applied)
 # Finding contours
 (contours, hierarchy) = findContours(canny_applied, RETR_EXTERNAL, CHAIN_APPROX_SIMPLE)
 print(f"Number of contours determined are: {len(contours)}")
+
+# Drawing contours
+copied_image = grayscale_image.copy()
+drawContours(copied_image, contours, -1, (0, 255, 0), 2)
+imshow("Contours", copied_image)
+waitKey(0)
