@@ -7,3 +7,7 @@
     where nonmaxima is calculated, and finally determines whether a pixel is “edge-like”
     or not by applying hysteresis thresholding.
 """
+
+# Canny Edge Detection
+
+from cv2 import (imread, imshow, waitKey, cvtColor, COLOR_BGR2GRAY, Canny)
