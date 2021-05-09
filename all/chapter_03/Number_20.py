@@ -20,3 +20,7 @@ from cv2 import (imread, imshow, waitKey, cvtColor, COLOR_BGR2GRAY, threshold, T
 original_image = imread("images/sudoku.png")
 grayscale_image = cvtColor(original_image, COLOR_BGR2GRAY)
 imshow("Grayscale Image", grayscale_image)
+
+# Binarizing the image
+(T, binarized_image) = threshold(grayscale_image, 0, 255, THRESH_BINARY_INV+THRESH_OTSU)
+imshow("Binarized Image", binarized_image)
