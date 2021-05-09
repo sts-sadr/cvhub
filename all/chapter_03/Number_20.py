@@ -14,3 +14,9 @@
 
 from cv2 import (imread, imshow, waitKey, cvtColor, COLOR_BGR2GRAY, threshold, THRESH_BINARY_INV,
                  THRESH_OTSU, Canny, findContours, RETR_EXTERNAL, CHAIN_APPROX_SIMPLE, drawContours)
+
+
+# Loading the image and converting to grayscale
+original_image = imread("images/sudoku.png")
+grayscale_image = cvtColor(original_image, COLOR_BGR2GRAY)
+imshow("Grayscale Image", grayscale_image)
