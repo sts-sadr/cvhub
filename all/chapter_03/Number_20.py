@@ -24,3 +24,7 @@ imshow("Grayscale Image", grayscale_image)
 # Binarizing the image
 (T, binarized_image) = threshold(grayscale_image, 0, 255, THRESH_BINARY_INV+THRESH_OTSU)
 imshow("Binarized Image", binarized_image)
+
+# Applying canny function
+canny_applied = Canny(binarized_image, 0, 255)
+imshow("Canny Applied", canny_applied)
