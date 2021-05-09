@@ -35,3 +35,4 @@ Computer Vision Practices
         * [Number_17](all/chapter_03/Number_17.py)--> Sobel Derivative
         * [Number_18](all/chapter_03/Number_18.py)--> Laplacian Derivative
         * [Number_19](all/chapter_03/Number_19.py)--> Canny edge detection
+        * [Number_20](all/chapter_03/Number_20.py)--> Contours
