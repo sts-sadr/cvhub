@@ -17,3 +17,8 @@ from cv2 import (imread, imshow, waitKey, cvtColor, COLOR_BGR2GRAY, Canny)
 original_image = imread("images/sudoku.png")
 grayscale_image = cvtColor(original_image, COLOR_BGR2GRAY)
 imshow("Grayscale Image", grayscale_image)
+
+# Canny function for edge detection
+result = Canny(grayscale_image, 50, 170)
+imshow("Canny Applied Image", result)
+waitKey(0)
