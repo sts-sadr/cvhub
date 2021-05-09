@@ -32,3 +32,6 @@ Computer Vision Practices
         * [Number_14](all/chapter_03/Number_14.py)--> Simple thresholding
         * [Number_15](all/chapter_03/Number_15.py)--> Adaptive thresholding
         * [Number_16](all/chapter_03/Number_16.py)--> Otsu's Binarization
+        * [Number_17](all/chapter_03/Number_17.py)--> Sobel Derivative
+        * [Number_18](all/chapter_03/Number_18.py)--> Laplacian Derivative
+        * [Number_19](all/chapter_03/Number_19.py)--> Canny edge detection
