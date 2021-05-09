@@ -20,3 +20,10 @@ original_image = imread("images/sudoku.png")
 grayscale_image = cvtColor(original_image, COLOR_BGR2GRAY)
 blurred_image = bilateralFilter(grayscale_image, 5, 50, 50)
 imshow("Blurred Image", blurred_image)
+
+
+# Applying laplace function
+laplace = Laplacian(blurred_image, CV_64F)
+laplace = uint8(absolute(laplace))
+imshow("Laplacian Edges", laplace)
+waitKey(0)
