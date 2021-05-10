@@ -13,8 +13,8 @@ imshow("Original Image", original_image)
 
 # Creating the rectangular mask
 mask_image = rectangle(np.zeros(original_image.shape[:2], dtype="uint8"), (50, 50),
-                           (int(original_image.shape[1]) - 50, int(original_image.shape[0] / 2) - 50),
-                           (255, 255, 255), -1)
+                       (int(original_image.shape[1]) - 50, int(original_image.shape[0] / 2) - 50),
+                       (255, 255, 255), -1)
 imshow("Mask Image", mask_image)
 
 # Performing mask using bitwise_and operator
