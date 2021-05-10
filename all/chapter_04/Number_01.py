@@ -7,3 +7,8 @@
         of a particular value or a range of values. The peak of the graph shows the color with the
         highest number of pixels.
 """
+
+# GrayScale Histogram
+
+from cv2 import (imread, imshow, waitKey, cvtColor, COLOR_BGR2GRAY, calcHist)
+import matplotlib.pyplot as plt
