@@ -18,3 +18,15 @@ import matplotlib.pyplot as plt
 original_image = imread("images/Bill-Gates.jpg")
 grayscale_image = cvtColor(original_image, COLOR_BGR2GRAY)
 imshow("Grayscale Image", grayscale_image)
+
+# Calculating the histogram
+hist = calcHist([grayscale_image], [0], None, [256], [0, 255])
+
+# Plotting histogram graph
+plt.figure()
+plt.title("GrayScale Histogram")
+plt.xlabel("Bins")
+plt.ylabel("Number of pixels")
+plt.plot(hist)
+plt.show()
+waitKey(0)
