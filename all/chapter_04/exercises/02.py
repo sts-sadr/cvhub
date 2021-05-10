@@ -28,3 +28,10 @@ for i, color in enumerate(colors):
     hist = calcHist([masked_image], [i], None, [256], [0, 255])
     # plotting the histogram graph
     plt.plot(hist, color=color)
+
+# plotting histogram
+plt.title("Masked Image Histogram")
+plt.xlabel("Bins")
+plt.ylabel("Number of pixels")
+plt.show()
+waitKey(0)
