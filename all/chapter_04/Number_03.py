@@ -7,3 +7,8 @@
 
 from cv2 import (imread, imshow, waitKey, cvtColor, COLOR_BGR2GRAY, calcHist, equalizeHist)
 import matplotlib.pyplot as plt
+
+
+# Loading the image and converting it to grayscale
+original_image = imread("images/Bill-Gates.jpg")
+imshow("Original Image", original_image)
