@@ -11,4 +11,5 @@ import matplotlib.pyplot as plt
 
 # Loading the image and converting it to grayscale
 original_image = imread("images/Bill-Gates.jpg")
-imshow("Original Image", original_image)
+grayscale_image = cvtColor(original_image, COLOR_BGR2GRAY)
+imshow("GrayScale Image", grayscale_image)
