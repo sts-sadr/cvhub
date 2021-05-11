@@ -30,3 +30,12 @@ equalized_image = equalizeHist(grayscale_image)
 imshow("Equalized Image", equalized_image)
 # Calculating the histogram
 equalized_hist = calcHist([equalized_image], [0], None, [256], [0, 255])
+
+# Plotting histogram
+plt.figure()
+plt.title("Grayscale Histogram of Equalized Image")
+plt.xlabel("Bins")
+plt.ylabel("Number of pixels")
+plt.plot(equalized_hist)
+plt.show()
+waitKey(0)
