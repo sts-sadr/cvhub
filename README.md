@@ -1,4 +1,4 @@
-# cviz
+# CVHub
 Computer Vision Practices
 
 
