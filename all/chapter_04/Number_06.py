@@ -10,3 +10,7 @@
 
 from skimage.feature import hog
 from cv2 import (imread, imshow, waitKey, resize)
+
+# Loading the image
+original_image = imread("images/Bill-Gates.jpg")
+imshow("Original Image", original_image)
