@@ -24,3 +24,9 @@ resized_image = resize(original_image, (int(original_image.shape[0] / 5),
                        block_norm="L2-Hys", feature_vector=True)
 print(f"Image Dimension: {resized_image.shape}")
 print(f"Feature vector Dimension: {HOG.shape}")
+
+# Displaying the results
+imshow("Original Image", original_image)
+imshow("Resized Image", resized_image)
+imshow("HOG Image", hog_image)
+waitKey(0)
