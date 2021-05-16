@@ -13,8 +13,14 @@ from cv2 import (imread, imshow, waitKey, resize)
 
 # Loading the image
 original_image = imread("images/Bill-Gates.jpg")
-imshow("Original Image", original_image)
 
 # Resizing the image
 resized_image = resize(original_image, (int(original_image.shape[0] / 5),
                                         int(original_image.shape[1] / 5)))
+
+# Calculating HOG
+(HOG, hog_image) = hog(resized_image, orientations=9, pixels_per_cell=(8, 8),
+                       cells_per_block=(2, 2), visualize=True, transform_sqrt=True,
+                       block_norm="L2-Hys", feature_vector=True)
+print(f"Image Dimension: {resized_image.shape}")
+print(f"Feature vector Dimension: {HOG.shape}")
