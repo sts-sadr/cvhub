@@ -5,3 +5,8 @@
         structural shape and appearance of an object in an image. The HOG algorithm computes
         the occurrences of gradient orientation in localized portions of the image.
 """
+
+# HOG Calculation
+
+from skimage.feature import hog
+from cv2 import (imread, imshow, waitKey, resize)
