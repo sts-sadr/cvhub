@@ -14,3 +14,7 @@ from cv2 import (imread, imshow, waitKey, resize)
 # Loading the image
 original_image = imread("images/Bill-Gates.jpg")
 imshow("Original Image", original_image)
+
+# Resizing the image
+resized_image = resize(original_image, (int(original_image.shape[0] / 5),
+                                        int(original_image.shape[1] / 5)))
