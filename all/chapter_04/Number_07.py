@@ -16,3 +16,6 @@ resized_image = resize(original_image, (int(original_image.shape[0] / 5),
                                         int(original_image.shape[1] / 5)))
 grayscale_image = cvtColor(resized_image, COLOR_BGR2GRAY)
 imshow("GrayScale Image", grayscale_image)
+
+# Calculating histogram of grayscale image
+original_hist = calcHist(grayscale_image, [0], None, [256], [0, 255])
