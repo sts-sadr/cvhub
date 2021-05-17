@@ -31,3 +31,9 @@ radius = 3
 points = 3 * 8
 lbp = local_binary_pattern(grayscale_image, points, radius, method="default")
 lbp_hist = histogram(lbp, density=True, bins=256, range=(0, 255))
+
+# Plotting histogram of LBP image
+plt.figure()
+plt.title("Histogram of lbp image")
+plt.plot(lbp_hist, color="g")
+plt.show()
