@@ -25,15 +25,20 @@ grayscale_hist = calcHist(grayscale_image, [0], None, [256], [0, 255])
 plt.figure()
 plt.title("Histogram of grayscale image")
 plt.plot(grayscale_hist, color="r")
+plt.show()
 
 # Calculating LBP image and histogram
 radius = 3
 points = 3 * 8
 lbp = local_binary_pattern(grayscale_image, points, radius, method="default")
-lbp_hist = histogram(lbp, density=True, bins=256, range=(0, 255))
+lbp_hist, _ = histogram(lbp, density=True, bins=256, range=(0, 255))
 
 # Plotting histogram of LBP image
 plt.figure()
 plt.title("Histogram of lbp image")
 plt.plot(lbp_hist, color="g")
 plt.show()
+
+# Displaying LBP Image
+imshow("LBP Image", lbp)
+waitKey(0)
